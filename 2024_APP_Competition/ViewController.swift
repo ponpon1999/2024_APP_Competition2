@@ -226,11 +226,11 @@ class ViewController: UIViewController, HandSwiperDelegate{
         
 
         let Distance0 = sqrt(pow(thumbTip.x - wrist.x, 2) + pow(thumbTip.y - wrist.y, 2))
-//        let Distance1  = abs(thumbTip.y - wrist.y)
-//        let Distance2  = abs(thumbTip.y - wrist.y)
-//        let Distance3  = abs(thumbTip.y - wrist.y)
-//        let Distance4  = abs(thumbTip.y - wrist.y)
-//        let Distance5  = abs(thumbTip.y - wrist.y)
+        let Distance1  = abs(thumbTip.y - wrist.y)
+        let Distance2  = abs(thumbTip.y - wrist.y)
+        let Distance3  = abs(thumbTip.y - wrist.y)
+        let Distance4  = abs(thumbTip.y - wrist.y)
+        let Distance5  = abs(thumbTip.y - wrist.y)
 //        let yDistance = Distance1 + Distance2 + Distance3 + Distance4 + Distance5
         let yDistance = Distance0
         print(yDistance, self.restingHand)
@@ -242,25 +242,25 @@ class ViewController: UIViewController, HandSwiperDelegate{
             self.restingHand = !self.restingHand
             self.handDelegate?.thumbsUp()
         }
-//        if(yDistance < 120){
-//            if self.restingHand{
-//                print("👎")
-//                self.restingHand = false
-//                self.handDelegate?.thumbsDown()
-//            }
-//
-//        }else if(yDistance > 300){
-//            if self.restingHand{
-//
-//                print("👍")
-//                self.restingHand = false
-//                self.handDelegate?.thumbsUp()
-//            }
-//        }
-//        else{
-//            print("✋")
-//            self.restingHand = true
-//        }
+        if(yDistance < 120){
+            if self.restingHand{
+                print("👎")
+                self.restingHand = false
+                self.handDelegate?.thumbsDown()
+            }
+
+        }else if(yDistance > 300){
+            if self.restingHand{
+
+                print("👍")
+                self.restingHand = false
+                self.handDelegate?.thumbsUp()
+            }
+        }
+        else{
+            print("✋")
+            self.restingHand = true
+        }
 
         cameraView.showPoints(pointsConverted)
     }
@@ -282,7 +282,7 @@ extension ViewController : SwipeCardsDataSource {
 //        return item
 //    }
     
-    //0511
+
     func card(at index: Int) -> CardView {
         let card = CardView(index: index)
         card.dataSource = modelData[index]
@@ -300,7 +300,6 @@ extension ViewController : SwipeCardsDataSource {
     
 }
 
-//0511
 extension UIImage {
     static func getImageWithColor(color:UIColor)->UIImage{
         let rect = CGRect(x: 0, y: 0, width: 1, height: 1)

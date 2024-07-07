@@ -8,23 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		584454702C39BE0E0089700E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5844546F2C39BE0E0089700E /* Assets.xcassets */; };
-		584454732C39BE0E0089700E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 584454722C39BE0E0089700E /* Preview Assets.xcassets */; };
 		5844547A2C39BE3C0089700E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584454792C39BE3C0089700E /* AppDelegate.swift */; };
 		5844547C2C39BE540089700E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5844547B2C39BE540089700E /* ViewController.swift */; };
 		5844547E2C39BE790089700E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5844547D2C39BE790089700E /* CardView.swift */; };
 		584454802C39BE930089700E /* StackContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5844547F2C39BE930089700E /* StackContainerView.swift */; };
 		584454822C39BEB60089700E /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584454812C39BEB60089700E /* CameraView.swift */; };
+		585636592C3A59D1006773CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 585636582C3A59D1006773CD /* Main.storyboard */; };
+		5856365B2C3A5A6B006773CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5856365A2C3A5A6B006773CD /* LaunchScreen.storyboard */; };
+		5856365D2C3A5AA4006773CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5856365C2C3A5AA4006773CD /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		584454682C39BE0C0089700E /* 2024_APP_Competition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2024_APP_Competition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5844546F2C39BE0E0089700E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		584454722C39BE0E0089700E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		584454792C39BE3C0089700E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5844547B2C39BE540089700E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5844547D2C39BE790089700E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		5844547F2C39BE930089700E /* StackContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackContainerView.swift; sourceTree = "<group>"; };
 		584454812C39BEB60089700E /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		585636582C3A59D1006773CD /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5856365A2C3A5A6B006773CD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5856365C2C3A5AA4006773CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,23 +61,17 @@
 		5844546A2C39BE0C0089700E /* 2024_APP_Competition */ = {
 			isa = PBXGroup;
 			children = (
-				5844546F2C39BE0E0089700E /* Assets.xcassets */,
-				584454712C39BE0E0089700E /* Preview Content */,
 				584454792C39BE3C0089700E /* AppDelegate.swift */,
+				5856365C2C3A5AA4006773CD /* SceneDelegate.swift */,
 				5844547B2C39BE540089700E /* ViewController.swift */,
 				5844547D2C39BE790089700E /* CardView.swift */,
 				5844547F2C39BE930089700E /* StackContainerView.swift */,
 				584454812C39BEB60089700E /* CameraView.swift */,
+				585636582C3A59D1006773CD /* Main.storyboard */,
+				5856365A2C3A5A6B006773CD /* LaunchScreen.storyboard */,
+				5844546F2C39BE0E0089700E /* Assets.xcassets */,
 			);
 			path = 2024_APP_Competition;
-			sourceTree = "<group>";
-		};
-		584454712C39BE0E0089700E /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				584454722C39BE0E0089700E /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +133,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				584454732C39BE0E0089700E /* Preview Assets.xcassets in Resources */,
+				585636592C3A59D1006773CD /* Main.storyboard in Resources */,
+				5856365B2C3A5A6B006773CD /* LaunchScreen.storyboard in Resources */,
 				584454702C39BE0E0089700E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +151,7 @@
 				5844547A2C39BE3C0089700E /* AppDelegate.swift in Sources */,
 				584454822C39BEB60089700E /* CameraView.swift in Sources */,
 				584454802C39BE930089700E /* StackContainerView.swift in Sources */,
+				5856365D2C3A5AA4006773CD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +286,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"2024_APP_Competition/Preview Content\"";
+				DEVELOPMENT_TEAM = GLYSD6X3M8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -298,7 +299,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.risa.-024-APP-Competition";
+				PRODUCT_BUNDLE_IDENTIFIER = "-2024-APP-Competition";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -316,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"2024_APP_Competition/Preview Content\"";
+				DEVELOPMENT_TEAM = GLYSD6X3M8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -328,7 +330,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.risa.-024-APP-Competition";
+				PRODUCT_BUNDLE_IDENTIFIER = "-2024-APP-Competition";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
